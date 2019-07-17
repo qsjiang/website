@@ -1,11 +1,389 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>秋石(作曲)</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style type="text/css">
+		body {
+			background-color: #191919;
+			padding: 0;
+			margin: 0;
+			font-family: 'Open Sans', sans-serif;	
+		}
+
+		.Billboard {
+			height: 400px;
+			padding-top: 140px;
+
+		}
+
+		.BillboardTextSection {
+			position: relative;
+			color: white;
+			padding-left: 50px;
+		}
+		.BillboardName {
+			font-size: 66px;
+			padding-bottom: : 20px;
+			padding-right: 20px;
+			border-bottom: 1px solid white;
+			display:inline-block;
+		}
+		.BillboardTitle {
+			font-size: 28px;
+		}
+		.NameEnglish {
+			font-size: 28px;
+			color: #DDD;
+		}
+		.TitleEnglish {
+			font-size: 20px;
+			color: #DDD;			
+		}
+		.Section {
+		
+			padding: 20px 30px;
+			color: white;
+		}
+
+		.SectionHeader {
+			margin: 0px auto;
+			padding-bottom: 20px;
+			width: 100%;
+			border-bottom: 1px solid white;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.WorkCardContainer {
+			padding: 20px 20px;
+		}
+
+		.WorkCardWrapper {
+			padding: 20px 10px;
+		}
+
+		.WorkCard {
+			background-color: #111;
+		}
+
+		.WorkCoverImage {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;	
+			width: 100%;
+			height: 160px;
+
+		}
+		.LinkSection {
+			display:inline-block;
+			background: rgba(0, 0, 0, 0.75);
+			padding: 6px 8px;
+			font-size: 14px;
+			cursor: pointer;
+			user-select: none;
+			text-decoration: none;
+			color: inherit; 
+		}
+
+		.LinkSection:hover {
+			color: #DDD;
+			text-decoration: none;
+		}
+
+		.LinkSectionIcon {
+			display: inline-block;
+			width: 25px;
+			margin-right:3px;
+		}
+
+
+		.LinkSectionText {
+			position: relative;
+			top:2px;
+
+		}
+		.WorkText {
+			background-color: #111;
+			padding: 10px 15px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;			
+		}
+
+		.WorkTitle {
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.WorkDescription {
+			font-size: 14px;
+			color: #DDD;
+		}
+
+		.VideoContainer {
+			padding: 20px 20px;
+		}
+		.VideoWrapper {
+			padding: 20px 10px;
+		}
+		.Video {
+			width: 100%;
+			height: 300px;
+		}
+		.ContactsSection {
+			padding: 100px 10px 200px 10px;
+			width: 90%;
+			margin: 0 auto;
+		}
+		.ContactsDescription {
+			text-align: center;
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+		.ContactMethodWrapper {
+			padding: 20px 10px;
+		}
+		.ContactMethod {
+			text-align: center;
+			font-size: 24px;
+		}
+	</style>
 </head>
 <body>
+	<div class="Billboard">
 
-Hello world
+		<div class="BillboardTextSection container">
+			<div class="BillboardName">
+				秋石 <span class="NameEnglish">/ Qiushi</span>
+			</div>
+			<div class="BillboardTitle">
+				作曲 <span class="TitleEnglish">/ Composer</span>
+			</div>
+		</div>	
+	</div>
+	<div class="container">
+	
+		<div class="Section">
+			<div class="SectionHeader">作品 / W O R K S</div>
+			<div class="WorkCardContainer row">
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/youlinglan.jpg);">
+								<a class="LinkSection" 
+									href="https://store.steampowered.com/app/1007450/lily_of_the_hollow/" 
+									target="_blank">
+									<img class="LinkSectionIcon" src="./static/image/steam.svg"></img>
+									<span class="LinkSectionText">Steam<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">幽铃兰</span>
+							<span class="WorkDescription">(主题曲/Theme Song)</span>
 
+						</div>
+					</div>
+				</div>
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/meilixinshijie.jpg);">
+								<a class="LinkSection" 
+									href="https://store.steampowered.com/app/895920/i_Brave_New_World_i/" 
+									target="_blank">
+									<img class="LinkSectionIcon" src="./static/image/steam.svg"></img>
+									<span class="LinkSectionText">Steam<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">美丽新世界i</span>
+							<span class="WorkDescription">(主题曲/Theme Song)</span>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/once.jpg);">
+								<a class="LinkSection" 
+									href="https://store.steampowered.com/app/411880/Once/?curator_clanid=7421824/" 
+									target="_blank">
+									<img class="LinkSectionIcon" src="./static/image/steam.svg"></img>
+									<span class="LinkSectionText">Steam<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">Once'</span>
+							<span class="WorkDescription">(配乐/BGM)</span>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/zhenlian.jpg);">
+								<a class="LinkSection" 
+									href="https://store.steampowered.com/app/411880/Once/?curator_clanid=7421824" 
+									target="_blank">
+									<img class="LinkSectionIcon" src="./static/image/steam.svg"></img>
+									<span class="LinkSectionText">Steam<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText"
+							<span class="WorkTitle">真恋</span>
+							<span class="WorkDescription">(主题曲/Theme Song, 配乐/BGM)</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/xuezhibenjing.jpg);">
+								<a class="LinkSection" 
+									href="http://sp04.sp-time.com/" 
+									target="_blank">
+									<span class="LinkSectionText">SPtime<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">雪之本境</span>
+							<span class="WorkDescription">(主题曲/Theme Song, 配乐/BGM)</span>
+
+						</div>
+					</div>
+				</div>
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/wuzhibenjing.jpg);">
+								<a class="LinkSection" 
+									href="https://www.sp-time.com/works/twisty-destiny" 
+									target="_blank">
+									<span class="LinkSectionText">SPtime<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">雾之本境</span>
+							<span class="WorkDescription">(主题曲/Theme Song, 配乐/BGM)</span>
+
+						</div>
+					</div>
+				</div>	
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/huangjin.jpg);">
+								<a class="LinkSection" 
+									href="http://www.kamineko-e.com/cn/the_golden_attorney/golden_index.html" 
+									target="_blank">
+									<span class="LinkSectionText">Kamineko<span>
+								</a>
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">海猫同人-黄金的逆转</span>
+							<span class="WorkDescription">(配乐/BGM)</span>
+
+						</div>
+					</div>
+				</div>					
+				<div class="WorkCardWrapper col-xl-4 col-md-6">
+					<div class="WorkCard">
+						<div class="WorkCover">
+							<div class="WorkCoverImage" 
+								style="background-image: url(./static/cover/debris.jpg);
+								background-position: 0 -40px;">
+							</div>
+						</div>
+						<div class="WorkText">
+							<span class="WorkTitle">Debris～記憶の欠片～</span>
+							<span class="WorkDescription">(同人专辑)</span>
+
+						</div>
+					</div>
+				</div>																				
+			</div>
+		</div>
+
+		<div class="Section">
+			<div class="SectionHeader">视频 / V I D E O S</div>
+			<div class="VideoContainer row"> 
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="http://player.bilibili.com/player.html?aid=44660840&cid=78193215&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="https://player.bilibili.com/player.html?aid=29787381&cid=55575914&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>	
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="https://player.bilibili.com/player.html?aid=16010505&cid=26122610&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>	
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="https://player.bilibili.com/player.html?aid=331864&cid=518093&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>	
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="https://player.bilibili.com/player.html?aid=6826652&cid=11120344&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>	
+				<div class="VideoWrapper col-lg-6">
+					<iframe class="Video" src="https://player.bilibili.com/player.html?aid=46960255&cid=82252048&page=1" 
+					scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+					</iframe>
+				</div>	
+			</div>
+	</div>
+	<div class="Section">
+		<div class="SectionHeader">联系方式 / C O N T A C T</div>
+		<div class="ContactsSection">
+			<div class="ContactsDescription">音乐制作业务欢迎通过以下方式联系：</div>
+			<div class="ContactsList row">
+				<div class="ContactMethodWrapper col-xl-4 ">
+					<div class="ContactMethod">
+						QQ:<br>517514067
+					</div>
+				</div>
+				<div class="ContactMethodWrapper col-xl-4 ">
+					<div class="ContactMethod">
+						Weibo:<br>@音乐人秋石
+					</div>
+				</div>
+				<div class="ContactMethodWrapper col-xl-4 ">
+					<div class="ContactMethod">
+						Email:<br>contact@qiushimusic.com
+					</div>
+				</div>							
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+
