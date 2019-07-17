@@ -14,11 +14,15 @@
 		}
 
 		.Billboard {
-			height: 400px;
 			padding-top: 140px;
-
+			padding-bottom:20px;
 		}
-
+		.BillboardPlayerSection{
+		}
+		.AudioPlayerWrapper {
+			padding: 20px 20px;
+			height: 300px;
+		}
 		.BillboardTextSection {
 			position: relative;
 			color: white;
@@ -153,19 +157,25 @@
 	</style>
 </head>
 <body>
-	<div class="Billboard">
 
-		<div class="BillboardTextSection container">
-			<div class="BillboardName">
-				秋石 <span class="NameEnglish">/ Qiushi</span>
-			</div>
-			<div class="BillboardTitle">
-				作曲 <span class="TitleEnglish">/ Composer</span>
-			</div>
-		</div>	
-	</div>
 	<div class="container">
-	
+
+		<div class="Billboard row">
+
+			<div class="BillboardTextSection col-xl-4">
+				<div class="BillboardName">
+					秋石 <span class="NameEnglish">/ Qiushi</span>
+				</div>
+				<div class="BillboardTitle">
+					作曲 <span class="TitleEnglish">/ Composer</span>
+				</div>
+			</div>	
+			<div class="BillboardPlayerSection col-xl-8">
+				<div class="AudioPlayerWrapper">
+					<div id="waveform"></div>	
+				</div>
+			</div>
+		</div>
 		<div class="Section">
 			<div class="SectionHeader">作品 / W O R K S</div>
 			<div class="WorkCardContainer row">
@@ -385,5 +395,16 @@
 		</div>
 	</div>
 </body>
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script type="text/javascript">
+	var wavesurfer = WaveSurfer.create({
+		container: '#waveform',
+		waveColor: 'white',
+		progressColor: '#999',
+		cursorColor: "#DDD",
+		barWidth: 1
+	});
+	wavesurfer.load('http://ia902606.us.archive.org/35/items/shortpoetry_047_librivox/song_cjrg_teasdale_64kb.mp3');
+</script>
 </html>
 
